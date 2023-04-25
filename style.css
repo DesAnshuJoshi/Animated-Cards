@@ -1,0 +1,102 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --white-color: #fff;
+  --black-color: hsl(210, 12%, 15%);
+  --body-color: hsl(210, 16%, 12%);
+  --container-color: hsl(210, 24%, 8%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: .938rem;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1024px) {
+  :root {
+    --h2-font-size: 1.5rem;
+    --normal-font-size: 1rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+/*=============== CARD ===============*/
+.container{
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+}
+
+.card__container,
+.card__article{
+    display: grid;
+    gap: 2rem;
+}
+
+.card__container{
+    padding-block: 4.5rem;
+}
+
+.card__article{
+    --hue-1: 210;
+    --hue-2: 238;
+    position: relative;
+    justify-items: center;
+    color: var(--white-color);
+    text-align: center;
+    padding: 4rem 2rem 3rem;
+    border: 4px solid transparent;
+    background: linear-gradient(
+                var(--container-color), 
+                var(--container-color)) padding-box,
+                linear-gradient(135deg, 
+                hsl(var(--hue-1), 85%, 70%) 0%,
+                var(--container-color),
+                var(--container-color),
+                hsl(var(--hue-2), 70%, 55%) 100%) border-box;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+/* Shapes card */
+
+
+/* Color change */
+
+
+/* Shapes scale */
+
+
+/* Shapes scale animation */
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+
+
+/* For medium devices */
+
+
+/* For large devices */
