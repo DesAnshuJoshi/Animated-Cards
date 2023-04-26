@@ -6,7 +6,7 @@
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --white-color: #fff;
-  --black-color: hsl(210, 12%, 15%);
+  --black-color: hsl(213, 12%, 15%);
   --body-color: hsl(210, 16%, 12%);
   --container-color: hsl(210, 24%, 8%);
   --body-color-light: hsl(210, 15%, 96%);
@@ -83,7 +83,7 @@ a {
 }
 
 /* Shapes card */
-.card__shape-l{
+.card__shape-1{
     position: relative;
     width: 148px;
     height: 148px;
@@ -157,8 +157,6 @@ a {
 .card__green{
     --hue-1: 165;
     --hue-2: 288;
-    /* --hue-1: 50;
-    --hue-2: 33; */
 }
 
 /* Shapes scale */
@@ -271,7 +269,7 @@ a {
     .card__scale-2{
         background-color: var(--container-color-light);
     }
-    .card__shape-l{
+    .card__shape-1{
         background: linear-gradient(140deg,                 
                     hsl(var(--hue-1), 70%, 50%) 3%,                
                     hsl(var(--hue-2), 95%, 45%) 100%);
